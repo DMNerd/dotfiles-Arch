@@ -1,5 +1,8 @@
 # Created by DMNerd for 5.7.1
-HISTFILE=.zhistory
+setopt inc_append_history share_history
+SAVEHIST=10
+HISTFILE=~/.zsh_history
+setopt correct_all
 setopt autocd
 autoload -Uz compinit
 compinit
@@ -12,7 +15,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 #The Fuck
 eval $(thefuck --alias)
 
-#LSDeluxe
+#LSD
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
