@@ -2,7 +2,7 @@ conky.config = {
 -- -- Conky settings -- #
 	background = true,
 	update_interval = 1,
-	update_interval_on_battery = 5,
+	update_interval_on_battery = 3,
 
 	cpu_avg_samples = 2,
 	net_avg_samples = 2,
@@ -18,7 +18,8 @@ conky.config = {
 
 -- -- Window specifications -- #
 	own_window = true,
-	own_window_type = 'normal',
+	own_window_class = Conky,
+	own_window_type = override,
 	own_window_argb_visual = true,
 	own_window_argb_value = 0,
 	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
@@ -45,7 +46,7 @@ conky.config = {
 -- -- Text settings -- #
 -- Ícones: ${font Conky Icons by Carelli:size=12}
 	use_xft = true,
-	font = 'Noto Sans Regular:size=12',
+	font = 'SF Pro Display Medium:size=12',
 	xftalpha = 1,
 	uppercase = false,
 	default_color = '#faed27',
@@ -56,8 +57,8 @@ conky.text = [[
 ${color #39ff14}${font Conky Icons by Carelli:size=14}Ħ ${font}DISTRO${color}
 ${goto 50}${font}${sysname} - ${kernel} ${machine}
 
-${color #39ff14}${font Conky Icons by Carelli:size=14}ŗ ${font}BATTERY${color}
-${goto 50}${battery_bar 8,165}${goto 225}${battery_percent BAT0}%
+${color #39ff14}${font Conky Icons by Carelli:size=14}ŗ ${font}BATTERY STATUS: ${battery BAT0}${color}
+${goto 50}${battery_bar 10,235}
 
 ${color #39ff14}${font Conky Icons by Carelli:size=14}E ${font}WLAN${color}
 ${goto 50}${font Conky Icons by Carelli:size=14}Ū${font}${goto 85}${upspeed wlp2s0}
