@@ -1,7 +1,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec feh --bg-fill ~/Pictures/wallpaper.jpg
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -59,9 +58,9 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec opera
+bindsym $mod+F2 exec firefox
 # bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec terminator -e ranger
+bindsym $mod+F3 exec nautilus
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -285,13 +284,15 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 # exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id conky -d
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec --no-startup-id redshift-gtk
+
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
