@@ -12,11 +12,8 @@ compinit
 # Fish like autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Additional Completions
-fpath=(path/to/zsh-completions/src $fpath)
-
 # Powerlevel
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # The Fuck
 eval $(thefuck --alias)
@@ -31,3 +28,18 @@ alias lt='ls --tree'
 # Misc Aliases
 alias df='df -h'
 alias nvi='nvim'
+
+#continue download
+alias wget="wget -c"
+
+#pacman unlock
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+
+# pacman or pm
+alias pacman='sudo pacman --color auto'
+alias update='sudo pacman -Syyu'
+
+# Additional Completions
+fpath=(~/.zsh/zsh-completions/src $fpath)
+
+neofetch
