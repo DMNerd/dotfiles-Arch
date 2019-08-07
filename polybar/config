@@ -1,8 +1,6 @@
 #-----------------------------------------------------------------------------#
 #----------------------------- Global settings -------------------------------#
 #-----------------------------------------------------------------------------#
-[bar/main]
-
 [colors]
 include-file = ~/.config/polybar/colors
 
@@ -14,7 +12,16 @@ margin-bottom = 0
 enable-ipc = true
 override-redirect = true
 wm-restack = i3
-bottom = false
+bottom = false121
+
+tray-position = left
+tray-padding = 2
+tray-detached = false
+tray-maxsize = 22
+#tray-background = ${colors.background-alt}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
 
 height = 25
 width = 70%
@@ -31,15 +38,15 @@ border-color = ${colors.primary}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = "DejaVu Sans:style=Bold:pixelsize=14;3"
-font-1 = "DejaVu Sans:pixelsize=14;3"
+font-0 = "DejaVu Sans:style=Bold:pixelsize=12;3"
+font-1 = "DejaVu Sans:pixelsize=12;3"
 font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;3"
 font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;3"
 font-4 = "Font Awesome 5 Brands:pixelsize=18;3"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = volume date keyboard battery
+modules-right = volume battery keyboard date
 padding-right = 2
 
 
@@ -91,6 +98,7 @@ label-visible-padding = ${self.label-focused-padding}
 [module/xwindow]
 type = internal/xwindow
 label = %{T2}%title:0:40:...%%{T-}
+format-padding = 0
 
 #-----------------------------=- Right modules -------------------------------#
 [module/date]
