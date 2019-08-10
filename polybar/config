@@ -24,9 +24,9 @@ tray-offset-y = 0
 tray-scale = 1.0
 
 height = 25
-width = 70%
-offset-y = 5
-offset-x = 15%
+width = 100%
+offset-y = 0
+offset-x = 0%
 fixed-center = true
 spacing = 1
 module-margin-left = 2
