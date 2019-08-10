@@ -40,9 +40,9 @@ foreground = ${colors.foreground}
 
 font-0 = "DejaVu Sans:style=Bold:pixelsize=12;3"
 font-1 = "DejaVu Sans:pixelsize=12;3"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=16;3"
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=16;3"
-font-4 = "Font Awesome 5 Brands:pixelsize=16;3"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=12;1"
 
 modules-left = i3
 modules-center = xwindow
@@ -159,6 +159,8 @@ animation-charging-framerate = 750
 [module/keyboard]
 type = internal/xkeyboard
 label-layout = %name%
+format-prefix ="  "
+format-prefix-foreground = ${colors.foreground}
 
 
 ; List of indicators to ignore
