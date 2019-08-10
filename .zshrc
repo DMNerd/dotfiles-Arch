@@ -1,6 +1,6 @@
 # Created by DMNerd for 5.7.1
 
-# Basic Setup
+# Basic Setup  
 setopt inc_append_history share_history
 SAVEHIST=500
 HISTFILE=~/.zsh_history

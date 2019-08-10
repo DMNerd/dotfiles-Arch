@@ -40,9 +40,9 @@ foreground = ${colors.foreground}
 
 font-0 = "DejaVu Sans:style=Bold:pixelsize=12;3"
 font-1 = "DejaVu Sans:pixelsize=12;3"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;3"
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;3"
-font-4 = "Font Awesome 5 Brands:pixelsize=18;3"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=16;3"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=16;3"
+font-4 = "Font Awesome 5 Brands:pixelsize=16;3"
 
 modules-left = i3
 modules-center = xwindow
