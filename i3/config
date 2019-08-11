@@ -45,7 +45,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -184,7 +184,7 @@ exec --no-startup-id compton
 for_window [class=".*"] border pixel 0
 # Setup gaps
 gaps inner 10
-gaps outer 10
+gaps outer -4
 gaps top 30
 
 ### AUTOSTART ###
@@ -198,13 +198,22 @@ exec --no-startup-id redshift-gtk
 # System apps
 exec --no-startup-id xfce4-power-manager &
 
-# Touchpad
+# Touchpad (tap to click, natural scrolling)
 exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 300 1
+exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 308 1
+
 
 ### Binds ###
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 bindsym $mod+F2 exec --no-startup-id vscodium;focus
-bindsym $mod+F3 exec --no-startup-id thunar;focus
+bindsym $mod+F3 exec --no-startup-id pcmanfm;focus
+
+bindsym Print exec --no-startup-id xfce4-screenshooter
+bindsym Control+Print exec --no-startup-id gnome-screenshot -i
+
+
+# Rofi
+bindsym $mod+d exec rofi -show drun 
 
 # Keyboard
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
