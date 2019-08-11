@@ -3,7 +3,7 @@ A# Set colors from .Xresources and use Solarized color scheme as a fallback
 background     = ${xrdb:background_trans:#000000}
 background-alt = ${xrdb:background_alt  :#073642}
 foreground     = ${xrdb:foreground      :#93A1A1}
-primary        = ${xrdb:primary         :#4B096A}
+primary        = ${xrdb:primary         :#07989B}
 secondary      = ${xrdb:secondary       :#859900}
 urgent         = ${xrdb:urgent          :#DC322F}
 
