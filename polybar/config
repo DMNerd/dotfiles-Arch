@@ -46,7 +46,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=12;1"
 
 modules-left = i3 
 modules-center = xwindow
-modules-right = volume backlight keyboard date arch-aur-updates
+modules-right = volume backlight keyboard date 
 padding-right = 2
 
 

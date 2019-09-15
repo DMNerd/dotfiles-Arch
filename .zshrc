@@ -12,8 +12,11 @@ compinit
 # Fish like autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Powerlevel
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+# Powerline-rs
+prompt() {
+    PS1="$(powerline-rs --shell zsh $?)"
+}
+precmd_functions+=(prompt)
 
 # The Fuck
 eval $(thefuck --alias)

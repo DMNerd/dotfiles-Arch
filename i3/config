@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:System San Francisco Display 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -24,7 +24,7 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -45,17 +45,17 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -64,10 +64,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -76,10 +76,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+b split h
 
 # split in vertical orientation
-bindsym $mod +v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -153,10 +153,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -183,6 +183,7 @@ exec_always --no-startup-id compton --config ~/.config/compton.conf -b
 # Remove Borders
 for_window [class=".*"] border pixel 0
 hide_edge_borders both
+
 # Setup gaps
 gaps inner 10
 gaps outer -4
@@ -190,33 +191,29 @@ gaps top 30
 
 ### AUTOSTART ###
 
+# I3 Alternating layout https://github.com/olemartinorg/i3-alternating-layout
+exec --no-startup-id ~/.config/i3/i3-alternating-layout/alternating_layouts.py
+
 # Nitrogen
-exec --no-startup-id nitrogen --restore
+exec_always --no-startup-id nitrogen --restore
 
 # Redshift
 exec --no-startup-id redshift-gtk
 
 # System apps
 exec --no-startup-id xfce4-power-manager 
+exec --no-startup-id blueman-applet
 
 # Touchpad (tap to click, natural scrolling) - xinput list to get your device and then xinput list-props 'device' to find the property
 exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 'libinput Tapping Enabled' 1
 exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 'libinput Natural Scrolling Enabled' 1
-
 
 ### Binds ###
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 bindsym $mod+F2 exec --no-startup-id vscodium;focus
 bindsym $mod+F3 exec --no-startup-id pcmanfm;focus
 
-#bindsym $mod+Shift+y exec --no-startup-id i3resize left
-#bindsym $mod+Shift+i exec --no-startup-id i3resize up
-#bindsym $mod+Shift+u exec --no-startup-id i3resize down
-#bindsym $mod+Shift+o exec --no-startup-id i3resize right
-
 bindsym Print exec --no-startup-id xfce4-screenshooter
-bindsym Control+Print exec --no-startup-id gnome-screenshot -i
-
 
 # Rofi
 bindsym $mod+d exec rofi -show drun 
@@ -225,5 +222,5 @@ bindsym $mod+d exec rofi -show drun
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
 
 # Xbacklight
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
