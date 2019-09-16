@@ -201,6 +201,7 @@ exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id redshift-gtk
 
 # System apps
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xfce4-power-manager 
 exec --no-startup-id blueman-applet
 
@@ -216,8 +217,7 @@ bindsym $mod+F3 exec --no-startup-id pcmanfm;focus
 bindsym Print exec --no-startup-id xfce4-screenshooter
 
 # Rofi
-bindsym $mod+d exec rofi -show drun 
-
+bindsym $mod+d exec rofi -show drun  -terminal terminator
 # Keyboard
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
 
