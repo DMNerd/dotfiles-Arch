@@ -176,7 +176,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 
 # Compton
-exec_always --no-startup-id compton --config ~/.config/compton.conf -b 
+exec --no-startup-id compton --config ~/.config/compton.conf -b 
 
 ### GAPS ###
 
@@ -185,14 +185,14 @@ for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
 # Setup gaps
-gaps inner 10
+gaps inner 15
 gaps outer -4
-gaps top 30
+gaps top 25
 
 ### AUTOSTART ###
 
 # I3 Alternating layout https://github.com/olemartinorg/i3-alternating-layout
-exec --no-startup-id ~/.config/i3/i3-alternating-layout/alternating_layouts.py
+exec_always --no-startup-id ~/.config/i3/i3-alternating-layout/alternating_layouts.py
 
 # Nitrogen
 exec_always --no-startup-id nitrogen --restore
