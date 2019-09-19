@@ -17,7 +17,7 @@ bottom = false121
 tray-position = right
 tray-padding = 2
 tray-detached = false
-tray-maxsize = 22
+tray-maxsize = 20
 #tray-background = ${colors.background-alt}
 tray-offset-x = 0
 tray-offset-y = 0
@@ -32,7 +32,7 @@ spacing = 1
 module-margin-left = 2
 module-margin-right = 2
 
-border-size = 2
+border-size = 0
 border-color = ${colors.primary}
 
 background = ${colors.background}
