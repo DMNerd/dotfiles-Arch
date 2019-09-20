@@ -152,7 +152,7 @@ format-prefix-foreground = ${colors.foreground}
 label = "%time% "
 
 [module/volume]
-type = internal/pulseaudio
+type = internal/alsa
 
 format-volume =   <bar-volume>
 
