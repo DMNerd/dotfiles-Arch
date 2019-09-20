@@ -22,10 +22,14 @@ Instalation:
 `yay -S polybar`
 
 ### ROFI
-[Rofi](https://github.com/davatorium/rofi "Rofi") is hands down the best launcher (honourable mention to [Albert](https://github.com/albertlauncher/albert "Albert") , sadly not really functional under I3 but on gnome, it was my preffered launcher)
-
+[Rofi](https://github.com/davatorium/rofi "Rofi") is hands down the best launcher (honourable mention to [Albert](https://github.com/albertlauncher/albert "Albert") , sadly not really functional under I3 but on gnome, it was my preffered launcher).
+Instalation:
+`yay -S rofi`
 ### COMPTON
 I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTenma/compton-kawase-blur "compton-kawase-blur"). 
 `yay -S compton-tryone-git`
+
+#### Cosmetic stuff
+Cursor: [Bibata](https://github.com/KaizIqbal/Bibata_Cursor "Bibata Oil"). Install: `yay -S bibata-cursor-theme`
 
 
