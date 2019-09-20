@@ -25,11 +25,32 @@ Instalation:
 [Rofi](https://github.com/davatorium/rofi "Rofi") is hands down the best launcher (honourable mention to [Albert](https://github.com/albertlauncher/albert "Albert") , sadly not really functional under I3 but on gnome, it was my preffered launcher).
 Instalation:
 `yay -S rofi`
+
 ### COMPTON
-I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTenma/compton-kawase-blur "compton-kawase-blur"). 
+I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTenma/compton-kawase-blur "compton-kawase-blur"). Instalation:
 `yay -S compton-tryone-git`
+
+### Terminator
+Terminator is my go to terminal. It supports many features I use and supports transparency (plus is easily configurable using its GUI). Instalation:
+`yay -S terminator`
+
+### ZSH 
+I use ZSH as my shell. 
+
+#### Powerline
+I use powerline-rs as mz powerline implementation. I preffer it over oh-my-zsh for the speed and responsiveness. Instalation: `yay -S powerline-rust`
+
+#### LSDeluxe
+Modern ls command, requires `awesome-terminal-fonts`. Instalation: `yay -S lsd`
+
+#### Neofetch
+Simple fetch program. Instalation: `yay -S neofetch`
+
+### Conky 
+TBH I stopped using conky after usin I3 for a while. It simply became irrelevant. But since I switched to polybar with very gnome-like config, I might rewrite the config and start using it again. For now, use it only if you want somewhere to start.
 
 #### Cosmetic stuff
 Cursor: [Bibata](https://github.com/KaizIqbal/Bibata_Cursor "Bibata Oil"). Install: `yay -S bibata-cursor-theme`
+Wallpaper>
 
 
