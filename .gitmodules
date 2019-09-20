@@ -1,0 +1,6 @@
+[submodule ".zsh/zsh-autosuggestions"]
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".zsh/zsh-completions"]
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "i3/i3-alternating-layout"]
+	url = https://github.com/olemartinorg/i3-alternating-layout
