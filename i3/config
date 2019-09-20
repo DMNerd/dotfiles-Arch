@@ -189,6 +189,9 @@ gaps top 25
 # I3 Alternating layout https://github.com/olemartinorg/i3-alternating-layout
 exec_always --no-startup-id ~/.config/i3/i3-alternating-layout/alternating_layouts.py
 
+# libinput-gestures - allows for I3 control with Touchpad gestures
+exec ibinput-gestures-setup start 
+
 # Nitrogen
 exec_always --no-startup-id nitrogen --restore
 
