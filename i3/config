@@ -190,7 +190,7 @@ gaps top 25
 exec_always --no-startup-id ~/.config/i3/i3-alternating-layout/alternating_layouts.py
 
 # libinput-gestures - allows for I3 control with Touchpad gestures
-exec ibinput-gestures-setup start 
+exec libinput-gestures-setup start 
 
 # Nitrogen
 exec_always --no-startup-id nitrogen --restore
@@ -231,3 +231,8 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 ### PROGRAM SPECIFIC WINDOW RULES ###
 
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
+
+### FIXES ###
+# Possible keyboard stopped working FIXES
+exec_always xkbset -sl
+exec_always xkbset -a
