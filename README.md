@@ -33,12 +33,13 @@ I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTe
 ### Terminator
 Terminator is my go to terminal. It supports many features I use and supports transparency (plus is easily configurable using its GUI). Instalation:
 `yay -S terminator`
+![Terminator](https://imgur.com/6IpGhzA.png "terminator")
 
 ### ZSH 
 I use ZSH as my shell. 
 
 #### Powerline
-I use powerline-rs as mz powerline implementation. I preffer it over oh-my-zsh for the speed and responsiveness. Instalation: `yay -S powerline-rust`
+I use powerline-rs as mz powerline implementation. I preffer it over oh-my-zsh for the speed and responsiveness. Instalation: `yay -S powerline-rs`
 
 #### LSDeluxe
 Modern ls command, requires `awesome-terminal-fonts`. Instalation: `yay -S lsd`
@@ -47,10 +48,11 @@ Modern ls command, requires `awesome-terminal-fonts`. Instalation: `yay -S lsd`
 Simple fetch program. Instalation: `yay -S neofetch`
 
 ### Conky 
-TBH I stopped using conky after usin I3 for a while. It simply became irrelevant. But since I switched to polybar with very gnome-like config, I might rewrite the config and start using it again. For now, use it only if you want somewhere to start.
+TBH I stopped using conky after using I3 for a while. It simply became irrelevant. But since I switched to polybar with very gnome-like config, I might rewrite the config and start using it again. For now, use it only if you want somewhere to start.
 
 #### Cosmetic stuff
 Cursor: [Bibata](https://github.com/KaizIqbal/Bibata_Cursor "Bibata Oil"). Install: `yay -S bibata-cursor-theme`
-Wallpaper>
+GTK Theme: [Flat Remix Blue Dark](https://github.com/daniruiz/flat-remix-gtk "flatremix"). I use this one because it is one of the best looking BLACK gtk themes. Shoutout to [Macterial](https://github.com/mythio/macterial "Macterial"), which also works very well!
+Wallpaper: [My own](https://i.imgur.com/zigb8iy.jpg "My wallpaper") that I made to match the terminal colorscheme and polybar accent colours.
 
 
