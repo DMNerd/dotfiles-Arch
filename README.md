@@ -2,6 +2,7 @@ Dotfiles
 ========
 
 Dotfiles for various things that correspond with my dark Arch setup
+
 ![DarkAFBro](https://i.imgur.com/Jn52WBw.png "My setup")
 
 ## Related packages
@@ -33,6 +34,7 @@ I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTe
 ### Terminator
 Terminator is my go to terminal. It supports many features I use and supports transparency (plus is easily configurable using its GUI). Instalation:
 `yay -S terminator`
+
 ![Terminator](https://imgur.com/6IpGhzA.png "terminator")
 
 ### ZSH 
