@@ -2,12 +2,16 @@
 
 # Basic Setup  
 setopt inc_append_history share_history
-SAVEHIST=500
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 setopt correct_all
 setopt autocd
+
+# Completion menu
 autoload -Uz compinit
+zstyle ':completion:*' menu select
 compinit
+_comp_options+=(globdots)
 
 # Fish like autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
