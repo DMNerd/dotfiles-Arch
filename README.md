@@ -48,7 +48,7 @@ Instalation:
 
 `yay -S terminator`
 
-![Terminator](https://imgur.com/6IpGhzA.png "terminator")
+![Terminator](https://imgur.com/wQi6vdC.png "terminator")
 
 ### ZSH 
 I use ZSH as my shell. 
