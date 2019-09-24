@@ -4,3 +4,6 @@
 	url = https://github.com/zsh-users/zsh-completions
 [submodule "i3/i3-alternating-layout"]
 	url = https://github.com/olemartinorg/i3-alternating-layout
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

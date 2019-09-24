@@ -16,6 +16,9 @@ _comp_options+=(globdots)
 # Fish like autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Fish like syntax highlighting
+source ${(q-)PWD}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Powerline-rs
 prompt() {
     PS1="$(powerline-rs --shell zsh $?)"
