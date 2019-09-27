@@ -90,4 +90,6 @@ GTK Theme: [Flat Remix Blue Dark](https://github.com/daniruiz/flat-remix-gtk "fl
 
 Wallpaper: [My own](https://i.imgur.com/zigb8iy.jpg "My wallpaper") that I made to match the terminal colorscheme and polybar accent colours.
 
-Icons: [McMojave Circle](mcmojave-circle-icon-theme-git "Mc Mojave Circe") 
+Icons: [McMojave Circle](https://github.com/vinceliuice/McMojave-circle "Mc Mojave Circe") 
+
+`yay -S mcmojave-circle-icon-theme-git`
