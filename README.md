@@ -34,6 +34,8 @@ Instalation:
 
 `yay -S rofi`
 
+![Rofi](https://imgur.com/vz7IwFE.png "Rofi")
+
 ### COMPTON
 I Use fork of compton called  [compton-kawase-blur](https://github.com/GabrielTenma/compton-kawase-blur "compton-kawase-blur"). 
 
