@@ -17,7 +17,7 @@ bottom = false121
 tray-position = right
 tray-padding = 2
 tray-detached = false
-tray-maxsize = 20
+tray-maxsize = 22
 #tray-background = ${colors.background-alt}
 tray-offset-x = 0
 tray-offset-y = 0
@@ -188,4 +188,3 @@ format-prefix-foreground = ${colors.foreground}
 blacklist-0 = num lock
 blacklist-1 = scroll lock
 blacklist-2 = caps lock
-
