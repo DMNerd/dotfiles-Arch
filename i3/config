@@ -211,6 +211,7 @@ exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 'libinput Natural Scrollin
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 bindsym $mod+F2 exec --no-startup-id vscodium;focus
 bindsym $mod+F3 exec --no-startup-id pcmanfm;focus
+bindsym $mod+Shift+F3 exec gksu pcmanfm
 
 bindsym $mod+bracketleft workspace prev
 bindsym $mod+bracketright workspace next
@@ -219,8 +220,11 @@ bindsym Print exec --no-startup-id xfce4-screenshooter
 
 # Rofi
 bindsym $mod+d exec rofi -show drun  -terminal terminator
+
 # Keyboard
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
+exec_always xkbset -sl
+exec_always xkbset -a
 
 # Xbacklight
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
@@ -233,9 +237,9 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 ### PROGRAM SPECIFIC WINDOW RULES ###
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
-for_window [class="Steam"] floating enable, border none
+for_window [class="GParted"] floating enable border normal
+for_window [class="Lxappearance"] floating enable sticky enable 
+for_window [class="Nitrogen"] floating enable sticky enable 
+for_window [class="Dia"] [window_role="toolbox_window"] floating enable sticky enable
 
-### FIXES ###
-# Possible keyboard stopped working FIXES
-exec_always xkbset -sl
-exec_always xkbset -a
+
