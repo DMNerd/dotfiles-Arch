@@ -18,7 +18,7 @@ Instalation:
 
 #### Other packages related to my I3 config
 
-`yay -S xkbset xorg-xinput libinput-gestures nitrogen redshift-gtk polkit-gnome xfce4-power-manager pcmanfm vscodium-bin`
+`yay -S xkbset xorg-xinput libinput-gestures nitrogen redshift-gtk polkit-gnome xfce4-power-manager pcmanfm vscodium-bin udiskie`
 
 ### Polybar
 The bar I settled for is [Polybar](https://github.com/polybar/polybar "Polybar"). 

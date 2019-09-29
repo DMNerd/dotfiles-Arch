@@ -202,6 +202,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xfce4-power-manager 
 exec --no-startup-id blueman-applet
+exec --no-startup-id udiskie
 
 # Touchpad (tap to click, natural scrolling) - xinput list to get your device and then xinput list-props 'device' to find the property
 exec xinput set-prop 'ELAN1300:00 04F3:3059 Touchpad' 'libinput Tapping Enabled' 1
