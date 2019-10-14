@@ -195,9 +195,6 @@ exec libinput-gestures-setup start
 # Nitrogen
 exec_always --no-startup-id nitrogen --restore
 
-# Redshift
-exec --no-startup-id redshift-gtk
-
 # System apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xfce4-power-manager 
@@ -220,7 +217,8 @@ bindsym $mod+bracketright workspace next
 bindsym Print exec --no-startup-id xfce4-screenshooter
 
 # Rofi
-bindsym $mod+d exec rofi -show drun  -terminal terminator
+bindsym $mod+d exec rofi --no-startup-id -show drun  -terminal terminator
+bindsym $mod+shift+d exec --no-startup-id rofi -lines 10 -padding 0 -show search -modi search:~/.config/rofi/rofi-web-search.py -i -p "Search: "
 
 # Keyboard
 exec setxkbmap -layout us,cz -option 'grp:alt_shift_toggle'
