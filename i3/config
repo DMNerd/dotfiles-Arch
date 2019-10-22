@@ -33,9 +33,6 @@ exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -215,6 +212,9 @@ bindsym $mod+bracketleft workspace prev
 bindsym $mod+bracketright workspace next
 
 bindsym Print exec --no-startup-id xfce4-screenshooter
+
+# Terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # Rofi
 bindsym $mod+d exec rofi --no-startup-id -show drun  -terminal terminator
