@@ -92,6 +92,10 @@ label-visible = %name%
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
+[module/Logo]
+type = custom/text
+content = 
+
 
 #------------------------------ Center modules -------------------------------#
 
@@ -152,8 +156,8 @@ format-prefix-foreground = ${colors.foreground}
 label = "%time% "
 
 [module/volume]
-type = internal/alsa
-
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
 format-volume =   <bar-volume>
 
 label-muted = "muted"

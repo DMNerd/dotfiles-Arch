@@ -226,13 +226,13 @@ exec_always xkbset -sl
 exec_always xkbset -a
 
 # Xbacklight
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1 # decrease screen brightness
 
-# Alsa
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +1% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -1% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 ### PROGRAM SPECIFIC WINDOW RULES ###
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
