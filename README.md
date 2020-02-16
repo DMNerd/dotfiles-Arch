@@ -56,7 +56,7 @@ Instalation:
 I use ZSH as my shell. 
 
 #### Powerline
-I use powerline-rs as mz powerline implementation. I preffer it over oh-my-zsh for the speed and responsiveness. 
+I use powerline-rs as my powerline implementation. I preffer it over oh-my-zsh for the speed and responsiveness. 
 
 Instalation: 
 
