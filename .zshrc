@@ -31,6 +31,9 @@ eval $(thefuck --alias)
 # EXA
 alias ls='exa -al --color=always --group-directories-first'
 
+# Weather
+alias wttr='curl wttr.in'
+
 # Misc Aliases
 alias df='df -h'
 alias nvi='nvim'
