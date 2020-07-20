@@ -28,12 +28,8 @@ precmd_functions+=(prompt)
 # The Fuck
 eval $(thefuck --alias)
 
-# LSDeluxe
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+# EXA
+alias ls='exa -al --color=always --group-directories-first'
 
 # Misc Aliases
 alias df='df -h'
