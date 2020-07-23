@@ -13,7 +13,7 @@ zstyle ':completion:*' menu select
 compinit
 _comp_options+=(globdots)
 
-# Prompt
+# Prompt = https://github.com/sindresorhus/pure
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
